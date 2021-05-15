@@ -1,11 +1,11 @@
 package com.be.bedemo.model;
 
-public class Contact {
+public class ContactRequest {
     private String name;
     private String surname;
-    private String mail;
+    private String contact;
     private String userName;
-    private int annualGross;
+    private int averageGross;
 
     public String getName() {
         return name;
@@ -23,12 +23,12 @@ public class Contact {
         this.surname = surname;
     }
 
-    public String getMail() {
-        return mail;
+    public String getContact() {
+        return contact;
     }
 
-    public void setMail(String mail) {
-        this.mail = mail;
+    public void setContact(String contact) {
+        this.contact = contact;
     }
 
     public String getUserName() {
@@ -39,11 +39,11 @@ public class Contact {
         this.userName = userName;
     }
 
-    public int getAnnualGross() {
-        return annualGross;
+    public int getAverageGross() {
+        return averageGross;
     }
 
-    public void setAnnualGross(int annualGross) {
-        this.annualGross = annualGross;
+    public void setAverageGross(int averageGross) {
+        this.averageGross = averageGross;
     }
 }
