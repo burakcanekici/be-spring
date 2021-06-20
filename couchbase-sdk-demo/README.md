@@ -20,3 +20,8 @@ so we need to navigate to `path: cd /Users/burakcan.ekici/.m2/repository/com/cou
 ```java
 rm -rf ~/.m2/repository
 ```
+
+**before start :***
+```java
+mvnci
+```
