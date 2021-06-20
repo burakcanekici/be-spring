@@ -21,7 +21,7 @@ so we need to navigate to `path: cd /Users/burakcan.ekici/.m2/repository/com/cou
 rm -rf ~/.m2/repository
 ```
 
-**before start :***
+**before start :**
 ```java
 mvnci
 docker-compose up
