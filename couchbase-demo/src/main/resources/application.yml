@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: local
+  application:
+    name: '@project.name@'
+
+couchbase:
+  buckets:
+    hosts: http://127.0.0.1
+    company:
+      bootstrap-hosts: http://127.0.0.1
+      bucket-name: Company
+      user-name: Company
+      password: password
+    employee:
+      bootstrap-hosts: http://127.0.0.1
+      bucket-name: Employee
+      user-name: Employee
+      password: password
+
+server:
+  port: 9292
+  error:
+    whitelabel:
+      enabled: false
