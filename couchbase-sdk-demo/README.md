@@ -24,4 +24,5 @@ rm -rf ~/.m2/repository
 **before start :***
 ```java
 mvnci
+docker-compose up
 ```
