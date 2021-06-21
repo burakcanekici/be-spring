@@ -2,8 +2,10 @@ package com.be.couchbasesdkdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
+@EnableTransactionManagement
 public class CouchbaseSdkDemoApplication {
 
     public static void main(String[] args) {
@@ -17,11 +19,11 @@ public class CouchbaseSdkDemoApplication {
     <dependency>
        <groupId>com.couchbase.client</groupId>
        <artifactId>couchbase-transactions</artifactId>
-       <version>1.1.7</version>
+       <version>1.1.8</version>
     </dependency>
 
     latest version of couchbase-transaction above has dependency
-                            ->  java-client:3.16 which has dependency
+                            ->  java-client:3.1.6 which has dependency
                                   ->  core-io:2.1.6
 
     but setAttribute was removed after core-io:2.1.5
