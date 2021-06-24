@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.1</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.be</groupId>
+    <artifactId>couhcbase-sdk-demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>couhcbase-sdk-demo</name>
+    <description>Demo project for Spring Boot</description>
+    <properties>
+        <java.version>11</java.version>
+
+        <!--        Spring Dependencies Versions -->
+        <starter.data.couchbase.version>2.5.0</starter.data.couchbase.version>
+
+        <!--       Couchbase Dependencies Versions -->
+        <couchbase.transactions.version>1.1.8</couchbase.transactions.version>
+
+        <!--        Swagger Dependency Versions -->
+        <springfox.swagger2.version>2.9.2</springfox.swagger2.version>
+        <springfox.swagger.ui.version>2.9.2</springfox.swagger.ui.version>
+
+        <!--        Util Dependencies Versions -->
+        <lang3.version>3.12.0</lang3.version>
+        <joda.time.version>2.10.6</joda.time.version>
+        <slf4j.version>1.7.30</slf4j.version>
+    </properties>
+    <dependencies>
+        <!--        Spring Dependencies -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-couchbase</artifactId>
+            <version>${starter.data.couchbase.version}</version>
+        </dependency>
+
+        <!--       Couchbase Dependencies -->
+        <dependency>
+            <groupId>com.couchbase.client</groupId>
+            <artifactId>couchbase-transactions</artifactId>
+            <version>${couchbase.transactions.version}</version>
+        </dependency>
+
+        <!--        Swagger Dependencies -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox.swagger2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${springfox.swagger.ui.version}</version>
+        </dependency>
+
+        <!--        Util Dependencies -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${lang3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>${joda.time.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
