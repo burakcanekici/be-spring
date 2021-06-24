@@ -9,3 +9,9 @@ install all dependencies
 ```java
 mvnci
 ```
+
+up the containers
+
+```java
+docker-compose up
+```
