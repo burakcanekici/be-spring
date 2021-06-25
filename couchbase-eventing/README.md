@@ -1,3 +1,7 @@
+There are 2 options to create buckets;
+
+* **OPTION 1:**
+
 execute the following command to create Couchbase cluster container;
 
 ```java
@@ -12,18 +16,29 @@ user-name: admin
 password: 123456
 ```
 
+create `beer-sample` and `beer-sample-metadata` buckets
+
+* **OPTION 2:**
+
 executing `docker-compose.yml` to create the bucket we will need;
 ```java
 docker-compose up
 ```
+---
 
 There are 2 different bucket.
 * beer-sample : where keep the actual record
 * beer-sample-metadata : where keep the metadata information
 
+---
+
 Open `localhost:8091` on browser and navigate `Eventing` tab on the left panel
 
+---
+
 Click `ADD FUNCTION` button
+
+----
 
 Select the following
 * Source Bucket -> beer-sample
@@ -31,8 +46,9 @@ Select the following
 * Function Name -> notify
 * Binding section : open terminal and type `ifconfig` and get ip (like; 192.168.1.255). Then add `notify-api` alias and bind this ip to use it in javascript function.
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/burakcanekici/be-spring/blob/main/couchbase-eventing/image/add_function.png)
 
+---
 
 Click `Add Code` button and copy the following code and save it
 
@@ -53,7 +69,11 @@ function OnUpdate(doc, meta) {
 function OnDelete(meta, options) {
 }
 ```
+---
 
+Deploy the function
+
+![alt text](https://github.com/burakcanekici/be-spring/blob/main/couchbase-eventing/image/add_function.png)
 
 
 insert a beer document with the following N1QL;
