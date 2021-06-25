@@ -73,6 +73,7 @@ function OnDelete(meta, options) {
 
 Deploy the function
 
+
 ![alt text](https://github.com/burakcanekici/be-spring/blob/main/couchbase-eventing/image/deploy.png)
 
 ---
@@ -81,6 +82,7 @@ create index on name property that will be used as updating;
 ```java
 CREATE INDEX `idx_beer-sample` ON `beer-sample`(`name`)
 ```
+---
 
 insert a beer document with the following N1QL;
 ```java
@@ -90,6 +92,7 @@ VALUES ("1", {
   "name": "Bud"
 });
 ```
+---
 
 update the beer document with the following N1QL;
 ```java
