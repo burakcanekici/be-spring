@@ -73,8 +73,9 @@ function OnDelete(meta, options) {
 
 Deploy the function
 
-![alt text](https://github.com/burakcanekici/be-spring/blob/main/couchbase-eventing/image/add_function.png)
+![alt text](https://github.com/burakcanekici/be-spring/blob/main/couchbase-eventing/image/deploy.png)
 
+---
 
 insert a beer document with the following N1QL;
 ```java
