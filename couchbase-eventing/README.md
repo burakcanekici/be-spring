@@ -99,3 +99,5 @@ WHERE name = "Bud";
 ```
 
 after executing the N1QL queries, the log about changing will POST to API and show on terminal
+
+![alt text](https://github.com/burakcanekici/be-spring/blob/main/couchbase-eventing/image/log.png)
