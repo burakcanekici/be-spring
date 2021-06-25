@@ -77,6 +77,11 @@ Deploy the function
 
 ---
 
+create index on name property that will be used as updating;
+```java
+CREATE INDEX `idx_beer-sample` ON `beer-sample`(`name`)
+```
+
 insert a beer document with the following N1QL;
 ```java
 INSERT INTO `beer-sample` (KEY, VALUE)
@@ -89,8 +94,8 @@ VALUES ("1", {
 update the beer document with the following N1QL;
 ```java
 UPDATE `beer-sample`
-SET name = "Bud"
-WHERE distributer = "USA";
+SET distributer = "USA"
+WHERE name = "Bud";
 ```
 
-after executing the N1QL queries 
+after executing the N1QL queries, the log about changing will POST to API and show on terminal
