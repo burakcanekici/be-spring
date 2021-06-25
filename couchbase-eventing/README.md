@@ -106,3 +106,9 @@ WHERE name = "Bud";
 after executing the N1QL queries, the log about changing will POST to API and show on terminal
 
 ![alt text](https://github.com/burakcanekici/be-spring/blob/main/couchbase-eventing/image/log.png)
+
+---
+
+https://docs.couchbase.com/server/5.5/eventing/eventing-adding-function.html
+https://docs.couchbase.com/server/current/cli/cbcli/couchbase-cli-eventing-function-setup.html
+
