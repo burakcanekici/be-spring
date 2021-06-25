@@ -31,6 +31,8 @@ Select the following
 * Function Name -> notify
 * Binding section : open terminal and type `ifconfig` and get ip (like; 192.168.1.255). Then add `notify-api` alias and bind this ip to use it in javascript function.
 
+![alt text](http://url/to/img.png)
+
 
 Click `Add Code` button and copy the following code and save it
 
