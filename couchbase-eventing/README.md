@@ -73,7 +73,9 @@ function OnDelete(meta, options) {
 
 Deploy the function
 
+![alt text](https://github.com/burakcanekici/be-spring/blob/main/couchbase-eventing/image/before-deploy.png)
 
+Ready for working
 ![alt text](https://github.com/burakcanekici/be-spring/blob/main/couchbase-eventing/image/deploy.png)
 
 ---
