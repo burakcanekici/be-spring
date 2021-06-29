@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  couchbase1:
+    image: couchbase:6.0.0
+    ports:
+      - 9091-9094:8091-8094
+      - 11211:11210
+
+  couchbase2:
+    image: couchbase:6.0.0
+    ports:
+      - 8091-8094:8091-8094
+      - 11210:11210
