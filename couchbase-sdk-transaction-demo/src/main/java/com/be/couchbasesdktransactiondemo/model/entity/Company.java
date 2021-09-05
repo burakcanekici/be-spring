@@ -3,6 +3,7 @@ package com.be.couchbasesdktransactiondemo.model.entity;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.couchbase.core.mapping.Document;
 import org.springframework.data.couchbase.core.mapping.Field;
 import org.springframework.data.couchbase.core.mapping.id.GeneratedValue;
 import org.springframework.data.couchbase.core.mapping.id.GenerationStrategy;
@@ -10,7 +11,7 @@ import org.springframework.data.couchbase.core.mapping.id.IdAttribute;
 
 import java.io.Serializable;
 
-
+@Document
 public class Company implements Serializable {
 
     private static final long serialVersionUID = 7330101427517450936L;

@@ -17,16 +17,16 @@ public class CouchbaseService {
         this.companyRepository = companyRepository;
     }
 
-    public void insert(CompanyCreateRequest companyCreateRequest, Boolean isFailed){
-        for(int i=0;i<15;i++){
+    public void insert(CompanyCreateRequest companyCreateRequest){
+        for(int i=0;i<5;i++){
             Company company = aCompany()
                     .companyName(companyCreateRequest.getCompanyName() + "#" + String.valueOf(i))
                     .location(companyCreateRequest.getLocation())
                     .size(companyCreateRequest.getSize())
                     .build();
 
-            if(isFailed && i == 6){
-                throw new RuntimeException("Tx is failed, rollback!");
+            if(i == 3){
+                throw new RuntimeException("No Tx, the items remaining will not be saved!");
             }
 
             companyRepository.save(company);

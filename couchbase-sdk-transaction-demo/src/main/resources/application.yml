@@ -5,7 +5,7 @@ spring:
     name: '@project.name@'
 
 couchbase:
-  connection-string: localhost
+  connection-string: couchbase://127.0.0.1
   user-name: admin
   password: 123456
   bucket-company:

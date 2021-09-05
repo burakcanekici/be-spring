@@ -31,7 +31,7 @@ public class CouchbaseTxService {
     public void insertTx(CompanyCreateRequest companyCreateRequest, Boolean isFailed){
         try{
             transactions.run(ctx -> {
-                for(int i=0;i<15;i++){
+                for(int i=0;i<5;i++){
                     Company company = aCompany()
                             .companyName(companyCreateRequest.getCompanyName() + "#" + i)
                             .location(companyCreateRequest.getLocation())
@@ -41,7 +41,7 @@ public class CouchbaseTxService {
                     CouchbaseDocument target = new CouchbaseDocument();
                     mappingCouchbaseConverter.write(company, target);
 
-                    if(isFailed && i == 6){
+                    if(isFailed && i == 3){
                         throw new RuntimeException("Tx is failed, rollback!");
                     }
 

@@ -14,7 +14,7 @@ import javax.validation.Valid;
 
 
 @RestController
-@RequestMapping("/couchbase")
+@RequestMapping("/transaction")
 public class CouchbaseController {
 
     private final CouchbaseService couchbaseService;
@@ -29,13 +29,7 @@ public class CouchbaseController {
     @PostMapping("/failed")
     @ResponseStatus(value = HttpStatus.CREATED)
     public void failed(@RequestBody @Valid CompanyCreateRequest companyCreateRequest) {
-        couchbaseService.insert(companyCreateRequest, true);
-    }
-
-    @PostMapping("/succeed")
-    @ResponseStatus(value = HttpStatus.CREATED)
-    public void succeed(@RequestBody @Valid CompanyCreateRequest companyCreateRequest) {
-        couchbaseService.insert(companyCreateRequest, false);
+        couchbaseService.insert(companyCreateRequest);
     }
 
     @PostMapping("/failedTx")

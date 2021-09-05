@@ -24,7 +24,7 @@ public class CouchbaseService {
         this.employeeRepository = employeeRepository;
     }
 
-    public void insert(CompanyCreateRequest companyCreateRequest){
+    public void insertCompany(CompanyCreateRequest companyCreateRequest){
         Company company = aCompany()
                 .companyName(companyCreateRequest.getCompanyName())
                 .location(companyCreateRequest.getLocation())
@@ -32,13 +32,6 @@ public class CouchbaseService {
                 .build();
 
         companyRepository.save(company);
-
-        Employee employee = anEmployee()
-                .name("Tom")
-                .surname("Riddle")
-                .build();
-
-        employeeRepository.save(employee);
     }
 
     public void insertEmployee(EmployeeCreateRequest employeeCreateRequest){

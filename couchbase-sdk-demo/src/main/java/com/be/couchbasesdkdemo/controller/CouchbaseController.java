@@ -25,10 +25,10 @@ public class CouchbaseController {
         this.couchbaseService = couchbaseService;
     }
 
-    @PostMapping
+    @PostMapping("/company")
     @ResponseStatus(value = HttpStatus.CREATED)
-    public void insert(@RequestBody @Valid CompanyCreateRequest companyCreateRequest) {
-        couchbaseService.insert(companyCreateRequest);
+    public void insertCompany(@RequestBody @Valid CompanyCreateRequest companyCreateRequest) {
+        couchbaseService.insertCompany(companyCreateRequest);
     }
 
     @PostMapping("/employee")

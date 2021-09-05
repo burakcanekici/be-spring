@@ -92,8 +92,8 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-context-support:5.3.8" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.3.8" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.5.1" level="project" />
-    <orderEntry type="library" name="Maven: com.couchbase.client:java-client:3.1.5" level="project" />
-    <orderEntry type="library" name="Maven: com.couchbase.client:core-io:2.1.5" level="project" />
+    <orderEntry type="library" name="Maven: com.couchbase.client:java-client:3.1.6" level="project" />
+    <orderEntry type="library" name="Maven: com.couchbase.client:core-io:2.1.6" level="project" />
     <orderEntry type="library" name="Maven: io.projectreactor:reactor-core:3.4.6" level="project" />
     <orderEntry type="library" name="Maven: org.reactivestreams:reactive-streams:1.0.3" level="project" />
     <orderEntry type="library" name="Maven: io.springfox:springfox-swagger2:2.9.2" level="project" />
