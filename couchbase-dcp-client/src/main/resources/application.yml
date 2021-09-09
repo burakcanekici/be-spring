@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: local
+  application:
+    name: '@project.name@'
+
+server:
+  port: 9292
