@@ -1,0 +1,13 @@
+id,player_name,team_id,team_name,league_id,league_name
+1_1,player1,1,team1,1,league1
+2_1,player2,1,team1,1,league1
+3_1,player3,1,team1,1,league1
+4_1,player4,1,team1,1,league1
+5_2,player5,2,team2,2,league2
+6_2,player6,2,team2,2,league2
+7_3,player7,3,team3,2,league2
+8_3,player8,3,team3,2,league2
+9_3,player9,3,team3,2,league2
+10_4,player10,4,team4,3,league3
+11_4,player11,4,team4,3,league3
+12_4,player12,4,team4,3,league3
