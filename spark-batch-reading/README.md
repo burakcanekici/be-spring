@@ -1,4 +1,4 @@
-make it single jar file and sign postgresql-42.2.24.jar from local repository
+* make it single jar file and sign postgresql-42.2.24.jar from local repository
 ```
 mvn package
 
@@ -8,9 +8,8 @@ spark-submit \
 target/spark-data-migrate-1.0-SNAPSHOT.jar
 ```
 
-OR
 
-make it uber jar file and it takes postgresql-42.2.24.jar from the uber jar
+* make it uber jar file and it takes postgresql-42.2.24.jar from the uber jar
 ```
 mvn clean compile assembly:single
 
