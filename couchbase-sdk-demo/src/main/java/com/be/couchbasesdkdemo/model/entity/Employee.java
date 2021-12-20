@@ -10,6 +10,7 @@ import org.springframework.data.couchbase.core.mapping.id.IdAttribute;
 
 import java.io.Serializable;
 
+@Document
 public class Employee implements Serializable {
 
     private static final long serialVersionUID = 2858630527113074043L;
